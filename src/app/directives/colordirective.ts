@@ -1,7 +1,7 @@
 import { OnInit, HostListener, Directive, ElementRef, EventEmitter, Input } from '@angular/core';
 
 @Directive({
-	selector: 'colordir'
+	selector: '[colordir]'
 })
 
 export class Colorcustomdirective implements OnInit{
@@ -9,7 +9,7 @@ export class Colorcustomdirective implements OnInit{
 	constructor(private el: ElementRef) {
   }
 
-  @Input() colordirvalue: string;
+  @Input('colordir') colordirvalue: string;
 
   ngOnInit(): void {
     //this.colordirvalue = 'red';

@@ -13,6 +13,7 @@ import { ShareService } from './share.service';
 })
 export class SharesComponent implements OnInit {
   shares: Share[];
+  color: string = 'Red';
 
   constructor(private shareService: ShareService,private router: Router) { }
 

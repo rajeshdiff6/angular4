@@ -12,6 +12,4 @@ import { ShareService } from './share.service';
 })
 export class AppComponent {
   title = 'Angular 4 Learning Platform';
-
-  product = {'name': '434'};
 }
