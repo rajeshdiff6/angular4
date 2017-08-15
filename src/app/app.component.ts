@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 
-import { Share }                from './share';
-import { ShareService } from './share.service'
+import { Share } from './share';
+import { ShareService } from './share.service';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,7 @@ import { ShareService } from './share.service'
   providers: [ShareService]
 })
 export class AppComponent {
-  title = 'Stock Market'; 
+  title = 'Angular 4 Learning Platform';
+
+  product = {'name': '434'};
 }

@@ -6,10 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharesComponent } from './shares.component';
 
+import { Colorcustomdirective } from './directives/colordirective';
+
 @NgModule({
   declarations: [
     AppComponent,
-    SharesComponent
+    SharesComponent,
+    Colorcustomdirective
   ],
   imports: [
     BrowserModule,

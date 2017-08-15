@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Router }            from '@angular/router';
+import { Router } from '@angular/router';
 import { OnInit } from '@angular/core';
 
-import { Share }                from './share';
-import { ShareService }         from './share.service';
+import { Share } from './share';
+import { ShareService } from './share.service';
 
 @Component({
   selector: 'my-shares',
@@ -14,14 +14,12 @@ import { ShareService }         from './share.service';
 export class SharesComponent implements OnInit {
   shares: Share[];
 
-  constructor(
-    private shareService: ShareService,
-    private router: Router) { }
+  constructor(private shareService: ShareService,private router: Router) { }
 
-	getShares(): void {
+  getShares(): void {
 	  this.shareService.getShares().then(shares => this.shares = shares);
 	}
-  
+
   ngOnInit(): void {
 	  this.getShares();
 	}

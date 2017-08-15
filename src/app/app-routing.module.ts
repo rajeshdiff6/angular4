@@ -1,9 +1,9 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { SharesComponent }   from './shares.component';
+import { SharesComponent } from './shares.component';
 const routes: Routes = [
-  { path: 'shares',  component: SharesComponent }
+  { path: 'directive',  component: SharesComponent }
 ];
 
 @NgModule({
