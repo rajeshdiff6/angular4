@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { SharesComponent } from './shares.component';
+import { TemplatesyntaxComponent } from './templatesyntax.component';
 
 import { Colorcustomdirective } from './directives/colordirective';
 
@@ -12,7 +13,8 @@ import { Colorcustomdirective } from './directives/colordirective';
   declarations: [
     AppComponent,
     SharesComponent,
-    Colorcustomdirective
+    Colorcustomdirective,
+    TemplatesyntaxComponent
   ],
   imports: [
     BrowserModule,
